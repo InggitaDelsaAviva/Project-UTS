@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.navigasi {
+    background-color:lightcoral;
+    width: 100%;
+    height: 70px;
+    color: bisque;
+    position: fixed;
+}
+
+  
+.logo {
+    float: left ;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+
+.menu {
+    margin-left: 600px;
+    padding: 30px;
+}
+
+
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+     margin-right: 40px;
+}
+
+
+.menu ul li a{
+    text-decoration: none;
+    color: bisque;
+}
+
+
+.menu ul li a:hover {
+    color: whitesmoke;
+    font-style: italic;
+}
+
+
+.banner {
+    background-color: rgb(199, 170, 219);
+    height: 585px;
+    margin-top: auto;
+    text-align: center;
+    color: bisque;
+}
+
+
+.banner img{
+    border-radius: 100px;
+    height: 180px;
+    border: 6px solid bisque;
+    margin-top: 150px;
+}
+     
+.banner h1 {
+    margin-top: 10px;
+}
+
+.banner button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 400px;
+    border-radius: 16px;
+    border: none; 
+    color: lightcoral;
+}
+
+.banner button:hover {
+    background-color: rgb(199, 170, 219);
+    border: 1px solid bisque;
+    color: bisque;
+} 
+
+h2 span:before { 
+    content:'';
+    animation: gerak infinite 5s ease;
+    transform: translateY(-50%); 
+    color:bisque;
+    font-size: 28px;
+}
+
+@keyframes gerak{
+    50% {
+        content: 'Welcom To My Profile';
+    }
+
+    65% {
+        content: 'Lest See About Me';
+    }
+}
+
+
+
+
+.box-me {
+    text-align: left;
+    color: bisque;
+    background-color: darkgray;
+    padding: 100px 20px 200px;
+}
+
+.box-me h1 {
+    padding: 50px 80px;
+    text-align: center;
+    color: bisque;
+}
+
+.box-saya {
+    width: 745px;
+    background-color: rgb(199, 170, 219) ;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 15px;
+    gap: 20px;
+    transition: bacround-color 0.3s, color 0.3s;
+}
+
+.box-saya img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50px;
+    border: 6px solid bisque;
+}
+
+.text-saya {
+    text-align: left;
+}
+
+.text-saya p {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.box-saya:hover{
+    background-color: lightcoral;
+    color: whitesmoke;
+}
+
+
+
+
+.box-education {
+    text-align: center;
+    color: bisque;
+    padding: 80px 20px 100px;
+    background-color: bisque;
+    overflow-x: auto;
+}
+
+.box-education h1 {
+    margin-bottom: 20px;
+    color: lightcoral;
+} 
+
+.education-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+
+.box-kiri, .box-tengah, .box-kanan {
+    flex: 0 0 auto;
+    width: 250px;
+    background-color: lightcoral;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.box-kiri img, .box-tengah img, .box-kanan img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.box-kiri h2, .box-tengah h2,.box-kanan h2 {
+    margin: 10px 0 5px;
+}
+
+.box-kiri h3, .box-tengah h3,.box-kanan h3 {
+    margin: 5px 0 10px;
+    font-weight: normal;
+}
+
+.box-kiri p, .box-tengah p,.box-kanan p {
+    font-size: 14px;
+}
+
+.box-kiri:hover, .box-tengah:hover,.box-kanan:hover {
+    background-color: rgb(199, 170, 219);
+    color: whitesmoke;
+}
+
+
+
+
+.box-sertifikat {
+    text-align: center;
+    background-color: rgb(199, 170, 219);
+    padding: 100px 20px 200px;
+   
+}
+
+.box-sertifikat h1{
+    margin-bottom: 30px;
+    color: bisque;
+}
+
+.box-sertifikat .box img {
+    width: 500px;
+    height: auto;
+    margin-top: 10px;
+}
+
+
+
+.kontak {
+    text-align: center;
+    color: bisque;
+    background-color: darkgray;
+    padding: 150px 20px 100px;
+    height: 450px;
+}
+
+.kontak-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px; 
+    margin-top: 30px;
+}
+
+.kontak-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box-kontak-atas, .box-kontak-tengah, .box-kontak-bawah {
+    width: 300px;
+    height: 60px;
+    background-color: bisque;
+    color: lightcoral;
+    text-align: left;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.box-kontak-atas img,.box-kontak-tengah img,.box-kontak-bawah img {
+    width: 30px;
+    height: 30px;
+}
+
+.box-kontak-atas p,.box-kontak-tengah p,.box-kontak-bawah p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.box-kontak img {
+    border-radius: 30px;
+    height: 250px;
+    border: 6px solid lightcoral;
+    background-color: bisque;
+    padding: 10px;
+}
+
+.box-kontak-atas:hover ,.box-kontak-tengah:hover,.box-kontak-bawah:hover{
+    background-color: lightcoral;
+    color: whitesmoke;
+}
+
+
+.footer {
+    background-color: lightcoral;
+    width: 99%;
+    height: 30px;
+    color: bisque;
+    padding: 3px;
+    margin: 0px auto 0px;
+}
