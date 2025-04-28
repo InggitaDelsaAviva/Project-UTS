@@ -292,12 +292,3 @@ h2 span:before {
     color: whitesmoke;
 }
 
-
-.footer {
-    background-color: lightcoral;
-    width: 99%;
-    height: 30px;
-    color: bisque;
-    padding: 3px;
-    margin: 0px auto 0px;
-}
